@@ -27,6 +27,11 @@
   </div>
 
   <div>
+    <%= form.label :mining_type_id %>
+    <%= form.select("mining_type_id", @mining_type_options, { include_blank: 'Selecione...' } ) %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
