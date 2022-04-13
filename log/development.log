@@ -8739,43 +8739,11 @@ Processing by CoinsController#index as HTML
 Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 5056)
 
 
-Started GET "/" for ::1 at 2022-04-12 19:50:17 -0300
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by WelcomeController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering welcome/index.html.erb within layouts/application
-  Rendered welcome/_menu.html.erb (Duration: 0.7ms | Allocations: 257)
-  Rendered welcome/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 713)
-  Rendered layout layouts/application.html.erb (Duration: 65.2ms | Allocations: 36549)
-Completed 200 OK in 73ms (Views: 67.7ms | ActiveRecord: 0.0ms | Allocations: 41269)
 
-
-Started GET "/coins" for ::1 at 2022-04-12 19:50:22 -0300
-Processing by CoinsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering coins/index.html.erb within layouts/application
-  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
-  ↳ app/views/coins/index.html.erb:20
-  Rendered coins/index.html.erb within layouts/application (Duration: 270.9ms | Allocations: 190281)
-  Rendered layout layouts/application.html.erb (Duration: 273.1ms | Allocations: 192484)
-Completed 200 OK in 282ms (Views: 273.9ms | ActiveRecord: 0.5ms | Allocations: 195889)
-
-
-Started GET "/coins/1/edit" for ::1 at 2022-04-12 22:55:26 -0300
-Processing by CoinsController#edit as HTML
-  Parameters: {"id"=>"1"}
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  ↳ app/controllers/coins_controller.rb:68:in `set_coin'
-  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/coins_controller.rb:68:in `set_coin'
-  [1m[36mMiningType Pluck (0.1ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
-  ↳ app/controllers/coins_controller.rb:63:in `set_mining_type_options'
-  Rendering layout layouts/application.html.erb
-  Rendering coins/edit.html.erb within layouts/application
-  Rendered coins/_form.html.erb (Duration: 7.2ms | Allocations: 3109)
-  Rendered coins/edit.html.erb within layouts/application (Duration: 8.1ms | Allocations: 3459)
-  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 5638)
-Completed 200 OK in 26ms (Views: 10.9ms | ActiveRecord: 0.9ms | Allocations: 16055)
 
 

@@ -12,6 +12,8 @@ namespace :dev do
       puts "Você não está em ambiente de desenvolvimento!"
     end
   end
+
+  
   desc "Cadastra os tipos de mineração"
   task add_mining_type: :environment do
     show_spinner("Cadastra os tipos de mineração..") do
@@ -27,7 +29,6 @@ namespace :dev do
       end
     end
   end
-
 
   desc "Cadastra as moedas"
   task add_coins: :environment do
