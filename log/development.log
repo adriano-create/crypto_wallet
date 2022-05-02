@@ -8747,3 +8747,1347 @@ Processing by WelcomeController#index as HTML
 
 
 
+Started GET "/" for ::1 at 2022-04-15 13:46:04 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 1.0ms | Allocations: 255)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 90.4ms | Allocations: 61474)
+  Rendered layout layouts/application.html.erb (Duration: 141.8ms | Allocations: 97222)
+Completed 200 OK in 149ms (Views: 143.9ms | ActiveRecord: 0.0ms | Allocations: 101942)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 13:46:10 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.3ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 8336)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 10525)
+Completed 200 OK in 20ms (Views: 13.5ms | ActiveRecord: 0.7ms | Allocations: 13559)
+
+
+Started GET "/coins/1/edit" for ::1 at 2022-04-15 14:06:01 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/coins_controller.rb:68:in `set_coin'
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68:in `set_coin'
+  [1m[36mMiningType Pluck (0.1ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/controllers/coins_controller.rb:63:in `set_mining_type_options'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 5.7ms | Allocations: 2575)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2920)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5107)
+Completed 200 OK in 30ms (Views: 9.2ms | ActiveRecord: 0.9ms | Allocations: 14962)
+
+
+Started GET "/coins/2/edit" for ::1 at 2022-04-15 14:06:21 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68:in `set_coin'
+  [1m[36mMiningType Pluck (0.1ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/controllers/coins_controller.rb:63:in `set_mining_type_options'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 1.8ms | Allocations: 1273)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1387)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3559)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 4713)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:07:31 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/coins/index.html.erb:18
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 40.9ms | Allocations: 63926)
+  Rendered layout layouts/application.html.erb (Duration: 54.9ms | Allocations: 78262)
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.9ms | Allocations: 80194)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:07:32 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2676)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4853)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 5116)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:07:32 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2662)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4839)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 5102)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:07:33 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2666)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4843)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 5106)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:07:33 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2668)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4847)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 5110)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:07:33 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2664)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 4846)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.1ms | Allocations: 5109)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:07:33 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.7ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2658)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 4835)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.7ms | Allocations: 5098)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:07:34 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2672)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 4849)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.2ms | Allocations: 5112)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:07:34 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:18
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2670)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4847)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 5110)
+
+
+Started GET "/coins/3/edit" for ::1 at 2022-04-15 14:13:25 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/coins_controller.rb:68:in `set_coin'
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68:in `set_coin'
+  [1m[36mMiningType Pluck (0.1ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/controllers/coins_controller.rb:63:in `set_mining_type_options'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 34.3ms | Allocations: 60172)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 34.7ms | Allocations: 60289)
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 74596)
+Completed 200 OK in 54ms (Views: 45.3ms | ActiveRecord: 0.7ms | Allocations: 80979)
+
+
+Started GET "/coins/4/edit" for ::1 at 2022-04-15 14:13:32 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68:in `set_coin'
+  [1m[36mMiningType Pluck (0.1ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/controllers/coins_controller.rb:63:in `set_mining_type_options'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 2.7ms | Allocations: 1267)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1381)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3549)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 4702)
+
+
+Started GET "/coins/5/edit" for ::1 at 2022-04-15 14:13:37 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68:in `set_coin'
+  [1m[36mMiningType Pluck (0.1ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/controllers/coins_controller.rb:63:in `set_mining_type_options'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 2.2ms | Allocations: 1271)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1385)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3563)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 4717)
+
+
+Started GET "/" for ::1 at 2022-04-15 14:51:21 -0300
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 6ms (Allocations: 2952)
+
+
+  
+NameError (undefined local variable or method `coockies' for #<WelcomeController:0x0000000001a1a8>
+Did you mean?  cookies):
+  
+app/controllers/welcome_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2022-04-15 14:51:46 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 14614)
+Completed 200 OK in 14ms (Views: 13.3ms | Allocations: 15310)
+
+
+Started GET "/" for ::1 at 2022-04-15 14:51:50 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.2ms | Allocations: 58)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 189)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2471)
+Completed 200 OK in 4ms (Views: 4.0ms | Allocations: 2788)
+
+
+Started GET "/" for ::1 at 2022-04-15 14:54:04 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.6ms | Allocations: 225)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 584)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3089)
+Completed 200 OK in 7ms (Views: 6.4ms | Allocations: 4050)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:54:05 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/coins/index.html.erb:19
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 5031)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 7219)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.4ms | Allocations: 9272)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:54:08 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2692)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4882)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 5148)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:54:09 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2712)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4890)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 5161)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:54:09 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2701)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4878)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 5142)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:54:09 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2691)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4868)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 5131)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:54:09 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2699)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4876)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 5139)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 14:54:09 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2689)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4866)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 5129)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:12:17 -0300
+  
+SyntaxError (/home/adriano/Documentos/Projetos pessoais/crypto_wallet/app/controllers/application_controller.rb:14: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/application_controller.rb:14: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:14: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:14: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/coins_controller.rb:1:in `<main>'
+Started GET "/coins" for ::1 at 2022-04-15 15:12:19 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/coins_controller.rb:1:in `<main>'
+Started GET "/coins" for ::1 at 2022-04-15 15:12:21 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/coins_controller.rb:1:in `<main>'
+Started GET "/coins" for ::1 at 2022-04-15 15:12:21 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/coins_controller.rb:1:in `<main>'
+Started GET "/coins" for ::1 at 2022-04-15 15:12:21 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/coins_controller.rb:1:in `<main>'
+Started GET "/coins" for ::1 at 2022-04-15 15:12:22 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/coins_controller.rb:1:in `<main>'
+Started GET "/coins" for ::1 at 2022-04-15 15:12:22 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/coins_controller.rb:1:in `<main>'
+Started GET "/coins" for ::1 at 2022-04-15 15:12:22 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/coins_controller.rb:1:in `<main>'
+Started GET "/coins" for ::1 at 2022-04-15 15:12:22 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/coins_controller.rb:1:in `<main>'
+Started GET "/coins" for ::1 at 2022-04-15 15:12:23 -0300
+  
+NameError (uninitialized constant ApplicationController):
+  
+app/controllers/coins_controller.rb:1:in `<main>'
+Started GET "/coins" for ::1 at 2022-04-15 15:15:35 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/coins/index.html.erb:19
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 4981)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 19498)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.4ms | Allocations: 21815)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:15:37 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2640)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4809)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 5142)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:15:38 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2628)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4807)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.1ms | Allocations: 5150)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:15:38 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2631)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 4803)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 5147)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:15:38 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2628)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4797)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 5143)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:15:38 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2628)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 4797)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 5138)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:15:38 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2628)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4797)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 5149)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:15:38 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2628)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4797)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 5137)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:15:39 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2628)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4797)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 5149)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:15:40 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2628)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4797)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 5147)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:15:40 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2628)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4797)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 5135)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:15:40 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2628)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4804)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 5144)
+
+
+Started GET "/" for ::1 at 2022-04-15 15:15:48 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.5ms | Allocations: 215)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3015)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3874)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 15:15:56 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 268)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2548)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 2894)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 15:17:59 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 1.3ms | Allocations: 215)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 719)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3216)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 4200)
+
+
+Started GET "/?locale=en" for ::1 at 2022-04-15 15:18:01 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 278)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2564)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 2971)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 15:18:06 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2541)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 2891)
+
+
+Started GET "/?locale=en" for ::1 at 2022-04-15 15:18:08 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2544)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 2896)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 15:18:09 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2541)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2891)
+
+
+Started GET "/?locale=en" for ::1 at 2022-04-15 15:18:11 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2541)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2887)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 15:18:14 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2541)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2884)
+
+
+Started GET "/?locale=en" for ::1 at 2022-04-15 15:18:16 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2541)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2887)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 15:18:18 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2541)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2897)
+
+
+Started GET "/?locale=en" for ::1 at 2022-04-15 15:18:20 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2541)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2893)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 15:18:27 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2541)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2893)
+
+
+Started GET "/?locale=en" for ::1 at 2022-04-15 15:21:28 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2541)
+Completed 200 OK in 6ms (Views: 5.8ms | Allocations: 2895)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:21:29 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/coins/index.html.erb:19
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3697)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 5877)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.5ms | Allocations: 6742)
+
+
+Started GET "/coins/2/edit" for ::1 at 2022-04-15 15:21:34 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68:in `set_coin'
+  [1m[36mMiningType Pluck (0.2ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/controllers/coins_controller.rb:63:in `set_mining_type_options'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 3.3ms | Allocations: 1757)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2096)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4278)
+Completed 200 OK in 18ms (Views: 7.4ms | ActiveRecord: 0.4ms | Allocations: 11941)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 15:21:47 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 274)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2565)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2911)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:21:48 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2631)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4813)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 5157)
+
+
+Started GET "/?locale=en" for ::1 at 2022-04-15 15:21:54 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2541)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2889)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:21:55 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2685)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 4857)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 5205)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:21:59 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2684)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 4853)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 5199)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 15:22:05 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2541)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2882)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:22:10 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2629)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4798)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 5144)
+
+
+Started GET "/coins/2/edit" for ::1 at 2022-04-15 15:22:12 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68:in `set_coin'
+  [1m[36mMiningType Pluck (0.1ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/controllers/coins_controller.rb:63:in `set_mining_type_options'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 2.2ms | Allocations: 1225)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1339)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3507)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 4742)
+
+
+Started GET "/?locale=en" for ::1 at 2022-04-15 15:31:08 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2542)
+Completed 200 OK in 6ms (Views: 5.2ms | Allocations: 2885)
+
+
+Started GET "/?locale=en" for ::1 at 2022-04-15 15:31:10 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2542)
+Completed 200 OK in 5ms (Views: 4.6ms | Allocations: 2888)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 15:31:13 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/coins/index.html.erb:19
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3264)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5435)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.4ms | Allocations: 5798)
+
+
+Started GET "/coins/2/edit" for ::1 at 2022-04-15 15:31:14 -0300
+Processing by CoinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins" WHERE "coins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/coins_controller.rb:68:in `set_coin'
+  [1m[36mMiningType Pluck (0.2ms)[0m  [1m[34mSELECT "mining_types"."description", "mining_types"."id" FROM "mining_types"[0m
+  ↳ app/controllers/coins_controller.rb:63:in `set_mining_type_options'
+  Rendering layout layouts/application.html.erb
+  Rendering coins/edit.html.erb within layouts/application
+  Rendered coins/_form.html.erb (Duration: 3.0ms | Allocations: 1301)
+  Rendered coins/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1415)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 3588)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.4ms | Allocations: 4840)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:13:12 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.9ms | Allocations: 215)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 723)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3250)
+Completed 200 OK in 8ms (Views: 6.8ms | Allocations: 4253)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:13:13 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 274)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2551)
+Completed 200 OK in 5ms (Views: 4.5ms | Allocations: 2888)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:13:14 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2544)
+Completed 200 OK in 4ms (Views: 3.6ms | Allocations: 2890)
+
+
+Started GET "/coins" for ::1 at 2022-04-15 17:13:16 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/coins/index.html.erb:19
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3617)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5802)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.3ms | Allocations: 6653)
+
+
+Started GET "/mining_types" for ::1 at 2022-04-15 17:13:20 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 3509)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 5697)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.6ms | Allocations: 6612)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:22 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 274)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 5704)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 6059)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:23 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2495)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 2843)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:23 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2495)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 2841)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:23 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2495)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 2835)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:24 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2495)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 2837)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:24 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 2506)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 2851)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:24 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2495)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 2845)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:24 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2495)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2839)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:24 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2495)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2845)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:25 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2495)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 2839)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:25 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2495)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2837)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:25 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2508)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 2871)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:25 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2495)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 2833)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:26 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2495)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2841)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:26 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2495)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 2831)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:26 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2495)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2839)
+
+
+Started GET "/?locale=pt-BR" for ::1 at 2022-04-15 17:15:26 -0300
+Processing by WelcomeController#index as HTML
+  Parameters: {"locale"=>"pt-BR"}
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2495)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 2839)
+
+
+Started GET "/coins" for ::1 at 2022-04-16 18:35:53 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/coins/index.html.erb:19
+  [1m[36mCoin Load (0.4ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 71.1ms | Allocations: 3216)
+  Rendered layout layouts/application.html.erb (Duration: 107.2ms | Allocations: 5452)
+Completed 200 OK in 129ms (Views: 114.1ms | ActiveRecord: 3.5ms | Allocations: 5804)
+
+
+Started GET "/coins" for ::1 at 2022-04-16 18:35:53 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.1ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2628)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4813)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.1ms | Allocations: 5163)
+
+
+Started GET "/mining_types" for ::1 at 2022-04-16 18:35:57 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2003)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4175)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.4ms | Allocations: 4536)
+
+
+Started GET "/mining_types/new" for ::1 at 2022-04-16 18:36:01 -0300
+Processing by MiningTypesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/new.html.erb within layouts/application
+  Rendered mining_types/_form.html.erb (Duration: 16.0ms | Allocations: 1193)
+  Rendered mining_types/new.html.erb within layouts/application (Duration: 71.7ms | Allocations: 1496)
+  Rendered layout layouts/application.html.erb (Duration: 74.1ms | Allocations: 3676)
+Completed 200 OK in 79ms (Views: 74.7ms | ActiveRecord: 0.0ms | Allocations: 4096)
+
+
+Started GET "/" for ::1 at 2022-04-20 08:16:05 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.4ms | Allocations: 51)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 274)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2576)
+Completed 200 OK in 8ms (Views: 7.3ms | Allocations: 2922)
+
+
+Started GET "/coins" for ::1 at 2022-04-20 08:16:25 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/coins/index.html.erb:19
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3219)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5415)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.4ms | Allocations: 5774)
+
+
+Started GET "/mining_types" for ::1 at 2022-04-20 08:53:50 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2550)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4722)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.6ms | Allocations: 5084)
+
+
+Started GET "/mining_types" for ::1 at 2022-04-20 09:33:30 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2543)
+  Rendered layout layouts/application.html.erb (Duration: 48.2ms | Allocations: 18933)
+Completed 200 OK in 57ms (Views: 49.3ms | ActiveRecord: 0.6ms | Allocations: 19288)
+
+
+Started GET "/mining_types" for ::1 at 2022-04-20 09:33:32 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1987)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4159)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.3ms | Allocations: 4504)
+
+
+Started GET "/mining_types" for ::1 at 2022-04-20 09:33:32 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1987)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4159)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 4506)
+
+
+Started GET "/mining_types" for ::1 at 2022-04-20 09:33:32 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1987)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4161)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.4ms | Allocations: 4520)
+
+
+Started GET "/mining_types" for ::1 at 2022-04-20 09:33:32 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1987)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4172)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 4526)
+
+
+Started GET "/mining_types" for ::1 at 2022-04-20 09:33:32 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (0.2ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1987)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4159)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.4ms | Allocations: 4502)
+
+
+Started GET "/mining_types" for ::1 at 2022-04-20 09:33:33 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1987)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4159)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 4510)
+
+
+Started GET "/mining_types" for ::1 at 2022-04-20 09:33:33 -0300
+Processing by MiningTypesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/index.html.erb within layouts/application
+  [1m[36mMiningType Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:3
+  [1m[36mMiningType Load (0.1ms)[0m  [1m[34mSELECT "mining_types".* FROM "mining_types"[0m
+  ↳ app/views/mining_types/index.html.erb:15
+  Rendered mining_types/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1987)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 4159)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 4514)
+
+
+Started GET "/mining_types/new" for ::1 at 2022-04-20 09:33:35 -0300
+Processing by MiningTypesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mining_types/new.html.erb within layouts/application
+  Rendered mining_types/_form.html.erb (Duration: 2.0ms | Allocations: 786)
+  Rendered mining_types/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 874)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3045)
+Completed 200 OK in 13ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3390)
+
+
+Started GET "/" for ::1 at 2022-04-20 09:33:41 -0300
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2545)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2892)
+
+
+Started GET "/coins" for ::1 at 2022-04-20 09:33:48 -0300
+Processing by CoinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering coins/index.html.erb within layouts/application
+  [1m[36mCoin Load (0.2ms)[0m  [1m[34mSELECT "coins".* FROM "coins"[0m
+  ↳ app/views/coins/index.html.erb:19
+  Rendered coins/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2646)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 4818)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 5180)
+
+
+Started GET "/" for ::1 at 2022-04-20 09:39:45 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.5ms | Allocations: 222)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 90.2ms | Allocations: 61326)
+  Rendered layout layouts/application.html.erb (Duration: 152.0ms | Allocations: 101909)
+Completed 200 OK in 160ms (Views: 154.3ms | ActiveRecord: 0.0ms | Allocations: 106733)
+
+
+Started GET "/" for ::1 at 2022-04-20 09:42:57 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.6ms | Allocations: 222)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 37.9ms | Allocations: 61326)
+Started GET "/" for ::1 at 2022-04-20 09:45:44 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.6ms | Allocations: 222)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 38.7ms | Allocations: 61326)
+  Rendered layout layouts/application.html.erb (Duration: 92.9ms | Allocations: 97264)
+Completed 200 OK in 99ms (Views: 94.5ms | ActiveRecord: 0.0ms | Allocations: 102103)
+
+
+Started GET "/" for ::1 at 2022-05-01 15:38:54 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/_menu.html.erb (Duration: 0.7ms | Allocations: 222)
+  Rendered welcome/index.html.erb within layouts/application (Duration: 83.4ms | Allocations: 61332)
+  Rendered layout layouts/application.html.erb (Duration: 131.2ms | Allocations: 97217)
+Completed 200 OK in 139ms (Views: 133.7ms | ActiveRecord: 0.0ms | Allocations: 101977)
+
+
