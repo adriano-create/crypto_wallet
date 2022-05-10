@@ -6,7 +6,7 @@
     attributes:
       coin:
         id: Código 
-        description: Descição
+        description: Descrição
         acronym: Sigla 
         url_image: Url da Imagem
         mining_type: Tipo de Miniração
@@ -15,7 +15,7 @@
         created_at: Criado em
       mining_type:
         id: Código 
-        description: Descição
+        description: Descrição
         acronym: Sigla 
         updated_at: Atualizado em
         created_at: Criado em 

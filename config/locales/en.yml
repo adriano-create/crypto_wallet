@@ -30,9 +30,34 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  actual_locale: "English (International)"
+  current_locale: "English (International)"
+  welcome: "Welcome!"
   hello: "Hello world"
+  messages:
+    welcome: This is Crypto Wallet, an app for you to register and track your cryptocurrencies
+    menu: To get started, select one of the options below
+    confirm: "Are you sure?"
   links:
-    edit: "Editar"
-    show: "Mostrar"
-    delete: "Apagar"
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+    back: "Back"
+  new:
+   coin: "New Coin"
+   mining_type: "New Mining Type"
+  editing:
+   coin: "Editing Coin"
+   mining_type: "Editing Mining Type"
+  showing:
+   coin: "Show Coin"
+   mining_type: "Showing Mining Type"
+
+
+
+
+
+
+
+
+
+
